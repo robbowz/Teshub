@@ -57,8 +57,8 @@ function remove_old_files() {
 	sudo rm -rf /root/teshub
 	sudo rm -rf /root/.teshub
 	sudo rm -rf /root/.teshubcore
-    sudo rm -rf teshubd
-    sudo rm -rf teshub-cli
+    	sudo rm -rf teshubd
+    	sudo rm -rf teshub-cli
 	echo "Done..."
 }
 
@@ -66,7 +66,7 @@ function remove_old_files() {
 function download_wallet() {
 	echo "Downloading wallet..."
 	mkdir /root/teshub
-    cd teshub
+    	cd teshub
 	mkdir /root/.teshub
 	wget https://github.com/Teshubcoin/wallet/releases/download/v1.0.1/tesb-wallet-linux.tar.gz
 	tar -zxvf tesb-wallet-linux.tar.gz
